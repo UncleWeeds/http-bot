@@ -12,7 +12,6 @@ This project demonstrates:
 - Reproducible builds using CMake
 - Optional containerized execution via Docker
 
----
 
 ## Features
 
@@ -25,8 +24,6 @@ This project demonstrates:
 - Generates a structured `summary.json` report
 - Optional `--print` flag to print the first 500 characters of each response
 - Docker support for reproducible builds
-
----
 
 ## Design Overview
 
@@ -42,14 +39,12 @@ High-level approach:
 
 The program initializes libcurl globally once per process and performs safe cleanup on exit.
 
-## Dependencies (Ubuntu)
+### Dependencies (Ubuntu)
 
 ```bash
 sudo apt update
 sudo apt install -y build-essential cmake pkg-config libcurl4-openssl-dev
 ```
-
----
 
 ## Build (Native)
 
@@ -58,9 +53,9 @@ cmake -S . -B build
 cmake --build build -j
 ```
 
----
 
-## Run
+
+### Run
 
 ```bash
 ./build/http_bot input/example.json
@@ -130,27 +125,6 @@ docker run --rm \
   - success flag
   - error message (if any)
 
----
 
-## Project Structure
 
-```
-.
-├── CMakeLists.txt
-├── Dockerfile
-├── input/
-│   └── example.json
-├── src/
-│   ├── main.cpp
-│   ├── http_client.cpp
-│   ├── http_client.hpp
-│   ├── json_loader.cpp
-│   └── json_loader.hpp
-└── README.md
-```
 
----
-
-## License
-
-This project is submitted as part of the Phase 1 evaluation exercise for the CVMFS build flow unification task.
