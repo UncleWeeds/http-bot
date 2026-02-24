@@ -1,0 +1,21 @@
+# Build artifacts
+build/
+output/
+docker-build/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Object files
+*.o
+*.a
+*.so
+
+# Logs
+*.log
+
+# OS files
+.DS_Store

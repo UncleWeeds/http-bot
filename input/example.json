@@ -1,0 +1,7 @@
+{
+  "bot_name": "awesomeCrawler",
+  "requests": [
+    { "name": "Google", "url": "https://www.google.com" },
+    { "name": "GitHub", "url": "https://www.github.com" }
+  ]
+}

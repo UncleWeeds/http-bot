@@ -1,0 +1,9 @@
+build/
+output/
+.git/
+.DS_Store
+*.o
+*.a
+*.so
+*.out
+*.log
